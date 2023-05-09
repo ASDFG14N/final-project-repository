@@ -130,6 +130,111 @@ section .banner {
     text-align: center;
 }
 
+.busqueda {
+    position: relative;
+    width: 6rem;
+    height: 6rem;
+    margin-bottom: 19.92px;
+    background: #fff;
+    border-radius: 6rem;
+    border: solid 1px;
+    border-color: #000000;
+    transition: 0.5s;
+    box-shadow: 0 0 0 5px white;
+    overflow: hidden;
+}
+
+.busqueda.activar{
+    width: 36rem;
+}
+
+
+.busqueda .lupa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 6rem;
+    height: 6rem;
+    background: rgb(255, 255, 255);
+    border-radius: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+.busqueda .lupa::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border:  3px solid #000000;
+    border-radius: 50%;
+    transform: translate(-3px,-3px) rotate(315deg);
+}
+
+.busqueda .lupa::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 8.5px;
+    border: 1px;
+    background: #000000;
+    transform: translate(6px,6px) rotate(315deg);
+}
+
+.busqueda .entrada{
+    position: relative;
+    width: 30rem;
+    height: 6rem;
+    left: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.busqueda .entrada input{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 1rem 0;
+    font-size: 1.9rem;
+}
+
+.limpiar{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.limpiar::before{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(45deg);
+}
+
+.limpiar::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: #999;
+    transform: rotate(315deg);
+}
+
 .lista-populares{
     display: grid;
     /*grid: repeat(3, 20rem) / repeat(4, 1fr);*/
