@@ -89,6 +89,20 @@ img {
     display: flex;
 }
 
+.carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fffefd;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 2px solid;
+}
+
+.img-carrito{
+    height: 2.1rem;
+}
 /*==============================================================================================================*/
 /**Botones*/
 /*==============================================================================================================*/
