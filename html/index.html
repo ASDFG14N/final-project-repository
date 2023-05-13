@@ -38,9 +38,27 @@
                         <div class="btn-crear-cuenta">
                             <a href="#">Crear cuenta</a>
                         </div>
-
+                    </div>
+                    <div class="cuadro">
                         <div class="carrito">
                             <img class="img-carrito" src="../img/cart-shopping-solid.svg" alt="">
+                            <div id="carrito">
+
+                                <table id="lista-carrito" class="t-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Imagen</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                                <a href="#" id="vaciar-carrito" class="button t-full-width">Vaciar Carrito</a>
+                            </div>
                         </div>
                     </div>
 
@@ -68,12 +86,18 @@
                 <span class="limpiar" onclick="document.getElementById('buscador').value = ''"></span>
             </div>
 
+            <!--Lista de mangas-->
             <div class="lista-populares">
                 <div class="manga">
                     <a href="#">
                         <h3>Titulo 1</h3>
                         <img src="../img/5f28ed9aded6d.jpg" alt="">
                     </a>
+                    <div class="info-manga">
+                        <img src="../img/estrellas.png" alt="star">
+                        <p class="precio">S/ 50</p>
+                        <a href="#" data-id="1">agregar al carrito</a>
+                    </div>
                 </div>
 
                 <div class="manga">
@@ -81,6 +105,11 @@
                         <h3>Titulo 2</h3>
                         <img src="../img/party kara tsuhou sareta sono chiyushi jitsu wa saikyou nitsuki.jpg" alt="">
                     </a>
+                    <div class="info-manga">
+                        <img src="../img/estrellas.png" alt="star">
+                        <p class="precio">S/ 50</p>
+                        <a href="#" data-id="2">agregar al carrito</a>
+                    </div>
                 </div>
 
                 <div class="manga">
@@ -88,6 +117,11 @@
                         <h3>Titulo 3</h3>
                         <img src="../img/Rikei ga koi ni ochita no de shoumei shitemita.jpg" alt="">
                     </a>
+                    <div class="info-manga">
+                        <img src="../img/estrellas.png" alt="star">
+                        <p class="precio">S/ 50</p>
+                        <a href="#" data-id="3">agregar al carrito</a>
+                    </div>
                 </div>
 
                 <div class="manga">
@@ -95,6 +129,11 @@
                         <h3>Titulo 4</h3>
                         <img src="../img/shusendo kishi ga ore wo nakaseyouto shiteimasu.jpg" alt="">
                     </a>
+                    <div class="info-manga">
+                        <img src="../img/estrellas.png" alt="star">
+                        <p class="precio">S/ 50</p>
+                        <a href="#" data-id="4">agregar al carrito</a>
+                    </div>
                 </div>
 
                 <div class="manga">
@@ -102,6 +141,11 @@
                         <h3>Titulo 5</h3>
                         <img src="../img/Sololeveling.jpg" alt="">
                     </a>
+                    <div class="info-manga">
+                        <img src="../img/estrellas.png" alt="star">
+                        <p class="precio">S/ 50</p>
+                        <a href="#" data-id="5">agregar al carrito</a>
+                    </div>
                 </div>
 
                 <div class="manga">
@@ -109,6 +153,11 @@
                         <h3>Titulo 6</h3>
                         <img src="../img/Sololeveling.jpg" alt="">
                     </a>
+                    <div class="info-manga">
+                        <img src="../img/estrellas.png" alt="star">
+                        <p class="precio">S/ 50</p>
+                        <a href="#" data-id="6">agregar al carrito</a>
+                    </div>
                 </div>
 
                 <div class="manga">
@@ -116,6 +165,11 @@
                         <h3>Titulo 7</h3>
                         <img src="../img/anime 1.jpg" alt="">
                     </a>
+                    <div class="info-manga">
+                        <img src="../img/estrellas.png" alt="star">
+                        <p class="precio">S/ 50</p>
+                        <a href="#" data-id="7">agregar al carrito</a>
+                    </div>
                 </div>
 
                 <div class="manga">
@@ -123,6 +177,11 @@
                         <h3>Titulo 8</h3>
                         <img src="../img/daybreak.jpg" alt="">
                     </a>
+                    <div class="info-manga">
+                        <img src="../img/estrellas.png" alt="star">
+                        <p class="precio">S/ 50</p>
+                        <a href="#" data-id="8">agregar al carrito</a>
+                    </div>
                 </div>
 
                 <div class="manga">
@@ -130,6 +189,11 @@
                         <h3>Titulo 9</h3>
                         <img src="../img/shusendo kishi ga ore wo nakaseyouto shiteimasu.jpg" alt="">
                     </a>
+                    <div class="info-manga">
+                        <img src="../img/estrellas.png" alt="star">
+                        <p class="precio">S/ 50</p>
+                        <a href="#" data-id="9">agregar al carrito</a>
+                    </div>
                 </div>
 
                 <div class="manga">
@@ -137,6 +201,11 @@
                         <h3>Titulo 10</h3>
                         <img src="../img/shusendo kishi ga ore wo nakaseyouto shiteimasu.jpg" alt="">
                     </a>
+                    <div class="info-manga">
+                        <img src="../img/estrellas.png" alt="star">
+                        <p class="precio">S/ 50</p>
+                        <a href="#" data-id="10">agregar al carrito</a>
+                    </div>
                 </div>
 
                 <div class="manga">
@@ -144,6 +213,11 @@
                         <h3>Titulo 11</h3>
                         <img src="../img/shusendo kishi ga ore wo nakaseyouto shiteimasu.jpg" alt="">
                     </a>
+                    <div class="info-manga">
+                        <img src="../img/estrellas.png" alt="star">
+                        <p class="precio">S/ 50</p>
+                        <a href="#" data-id="11">agregar al carrito</a>
+                    </div>
                 </div>
 
                 <div class="manga">
@@ -151,6 +225,11 @@
                         <h3>Titulo 12</h3>
                         <img src="../img/shusendo kishi ga ore wo nakaseyouto shiteimasu.jpg" alt="">
                     </a>
+                    <div class="info-manga">
+                        <img src="../img/estrellas.png" alt="star">
+                        <p class="precio">S/ 50</p>
+                        <a href="#" data-id="12">agregar al carrito</a>
+                    </div>
                 </div>
 
             </div> <!--fin de la presentacion de los animes-->
@@ -172,7 +251,7 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores expedita, quasi adipisci rem natus ipsam
             molestiae ut, quisquam nisi nihil maxime ab veniam fuga esse enim quae. Incidunt, amet neque?
         </p>
-    </main>
+    </main> <!--Fin del main-->
 
     <footer class="footer">
         <div class="contenedor">

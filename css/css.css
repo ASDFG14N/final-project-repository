@@ -36,7 +36,9 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
-
+.t-full-width {
+    width: 100%;
+    box-sizing: border-box; }
 
 /*==============================================================================================================*/
 /*Encabezado - header*/
@@ -89,6 +91,12 @@ img {
     display: flex;
 }
 
+.cuadro {
+    display: flex;
+    height: 9rem;
+    align-items: center;
+}
+
 .carrito {
     display: flex;
     justify-content: center;
@@ -100,17 +108,59 @@ img {
     border: 2px solid;
 }
 
-.img-carrito{
+.img-carrito {
     height: 2.1rem;
 }
+
+#carrito {
+    display: none;
+}
+
+.cuadro:hover #carrito {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 2rem;
+    min-height: 40rem;
+    min-width: 40rem;
+    border-bottom: 2px solid #a5a5a5da;
+    border-left: 2px solid #a5a5a5da;
+}
+
+th,
+td {
+    padding-right: 5rem;
+    text-align: left;
+    border-bottom: 1.5px solid #e1e1e1da;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:nth-child(4) {
+    padding-right: 0px;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
 /*==============================================================================================================*/
 /**Botones*/
 /*==============================================================================================================*/
-.btn-login a{
-    color: black!important; 
+.btn-login a {
+    color: black !important;
 }
+
 .btn-login,
 .btn-crear-cuenta {
+    max-height: 4rem;
     display: flex;
     align-items: center;
     letter-spacing: 0;
@@ -121,6 +171,30 @@ img {
 
 .btn-crear-cuenta {
     background-color: #67886B;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 2px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 /*==============================================================================================================*/
@@ -136,11 +210,11 @@ section .banner {
 /*==============================================================================================================*/
 /*Main - Listado de animes*/
 /*==============================================================================================================*/
-.contenido-principal{
+.contenido-principal {
     padding-top: 3rem;
 }
 
-.contenedor h2{
+.contenedor h2 {
     text-align: center;
 }
 
@@ -158,12 +232,12 @@ section .banner {
     overflow: hidden;
 }
 
-.busqueda.activar{
+.busqueda.activar {
     width: 36rem;
 }
 
 
-.busqueda .lupa{
+.busqueda .lupa {
     position: absolute;
     top: 0;
     left: 0;
@@ -177,27 +251,28 @@ section .banner {
     z-index: 1000;
     cursor: pointer;
 }
-.busqueda .lupa::before{
+
+.busqueda .lupa::before {
     content: "";
     position: absolute;
     width: 20px;
     height: 20px;
-    border:  3px solid #000000;
+    border: 3px solid #000000;
     border-radius: 50%;
-    transform: translate(-3px,-3px) rotate(315deg);
+    transform: translate(-3px, -3px) rotate(315deg);
 }
 
-.busqueda .lupa::after{
+.busqueda .lupa::after {
     content: "";
     position: absolute;
     width: 5px;
     height: 8.5px;
     border: 1px;
     background: #000000;
-    transform: translate(6px,6px) rotate(315deg);
+    transform: translate(6px, 6px) rotate(315deg);
 }
 
-.busqueda .entrada{
+.busqueda .entrada {
     position: relative;
     width: 30rem;
     height: 6rem;
@@ -207,7 +282,7 @@ section .banner {
     align-items: center;
 }
 
-.busqueda .entrada input{
+.busqueda .entrada input {
     position: absolute;
     top: 0;
     width: 100%;
@@ -218,7 +293,7 @@ section .banner {
     font-size: 1.9rem;
 }
 
-.limpiar{
+.limpiar {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -231,7 +306,7 @@ section .banner {
     align-items: center;
 }
 
-.limpiar::before{
+.limpiar::before {
     position: absolute;
     content: "";
     width: 1px;
@@ -240,7 +315,7 @@ section .banner {
     transform: rotate(45deg);
 }
 
-.limpiar::after{
+.limpiar::after {
     position: absolute;
     content: "";
     width: 1px;
@@ -249,14 +324,14 @@ section .banner {
     transform: rotate(315deg);
 }
 
-.lista-populares{
+.lista-populares {
     display: grid;
     /*grid: repeat(3, 20rem) / repeat(4, 1fr);*/
-    grid: repeat(3, 50rem) / repeat(4, 1fr);
+    grid: repeat(3, 63rem) / repeat(4, 1fr);
     gap: 1rem;
 }
 
-.lista-populares .manga{
+.lista-populares .manga {
     background-color: #247ae4;
     border: #000000 solid 3px;
 }
@@ -265,30 +340,37 @@ section .banner {
 /*==============================================================================================================*/
 /*Seccion del footter*/
 /*==============================================================================================================*/
-.footer{
+.footer {
     background-color: #3d4043;
 }
-.footer, .titulos-footer, .lista-footer a, .descripcion-pagina{
+
+.footer,
+.titulos-footer,
+.lista-footer a,
+.descripcion-pagina {
     color: #ffffff;
 }
-.footer .box3{
+
+.footer .box3 {
     max-width: 430px;
 }
-.fila-footer{
+
+.fila-footer {
     display: flex;
     justify-content: space-between;
 }
 
-.lista-footer{
+.lista-footer {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 ul.lista-footer li {
     padding-bottom: 1.5rem;
 }
 
-.icono-redes{
+.icono-redes {
     color: #ffffff;
 }
 
@@ -310,6 +392,7 @@ ul.iconos-redes {
     -webkit-transition: .5s;
     transition: .5s;
 }
+
 .fa-facebook:hover {
     background-color: #247ae4;
 }
@@ -322,6 +405,7 @@ ul.iconos-redes {
     -webkit-transition: .5s;
     transition: .5s;
 }
+
 .fa-twitter:hover {
     background-color: #00aced;
 }
@@ -334,6 +418,7 @@ ul.iconos-redes {
     -webkit-transition: .5s;
     transition: .5s;
 }
+
 .fa-instagram:hover {
     background-color: #ff3087;
 }
