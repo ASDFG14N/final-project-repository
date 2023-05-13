@@ -112,11 +112,11 @@ img {
     height: 2.1rem;
 }
 
-#carrito {
+#carrito2{
     display: none;
 }
 
-.cuadro:hover #carrito {
+.cuadro:hover #carrito2 {
     display: block;
     position: absolute;
     right: 0;
