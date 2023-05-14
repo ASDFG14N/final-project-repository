@@ -357,7 +357,7 @@ section .banner {
 .lista-populares {
     display: grid;
     /*grid: repeat(3, 20rem) / repeat(4, 1fr);*/
-    grid: repeat(3, 63rem) / repeat(4, 1fr);
+    grid: repeat(2, 48rem) / repeat(6, 1fr);
     gap: 1rem;
 }
 
@@ -365,13 +365,6 @@ section .banner {
     background-color: #247ae4;
     border: #000000 solid 2px;
 }
-
-.info-manga {
-    display: inline-block;
-    max-width: 25rem;
-    margin-left: 3rem;
-}
-
 
 /*==============================================================================================================*/
 /*Seccion del footter*/
