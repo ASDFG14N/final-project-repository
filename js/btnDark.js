@@ -1,9 +1,13 @@
-const btn = document.getElementById('btn-dark')
-const icon = document.getElementById('moom-sun')
-const siteHeader = document.getElementById('site-header')
+const toggle = document.getElementById('toggle')
+const icon = document.getElementById('icon')
 
-btn.addEventListener('click', () =>{
+toggle.addEventListener('change', (evt) =>{
+    const check = evt.target.checked
+    console.log(check)
     document.body.classList.toggle('dark')
-    icon.innerHTML = '<i class="fa-solid fa-sun"></i>'
-    console.log(siteHeader)
+    if (check === true) {
+        icon.innerHTML = '<i class="fa-solid fa-sun"></i>'
+    }else{
+        icon.innerHTML = '<i class="fa-solid fa-moon"></i>'
+    }
 })

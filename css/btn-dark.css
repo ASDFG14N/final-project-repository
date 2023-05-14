@@ -13,10 +13,17 @@
     z-index: 9999;
     cursor: pointer;
 }
+
+#toggle{
+    display: none;
+    height: 26px;
+    width: 26px;
+}
 .fa-sun,
 .fa-moon{
     color: #5c5c5c;
     font-size: 35px;
+    cursor: pointer;
 }
 
 .dark{

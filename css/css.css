@@ -366,6 +366,39 @@ section .banner {
     border: #000000 solid 2px;
 }
 
+/*Overlay img y descripcion*/
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.description {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+}
+
 /*==============================================================================================================*/
 /*Seccion del footter*/
 /*==============================================================================================================*/
