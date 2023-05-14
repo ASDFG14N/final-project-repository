@@ -1,0 +1,26 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    left: 10px;
+    bottom: 10px;
+    opacity: 0.5;
+    z-index: 9999;
+    cursor: pointer;
+}
+.fa-sun,
+.fa-moon{
+    color: #5c5c5c;
+    font-size: 35px;
+}
+
+.dark{
+    background-color: #333;
+    color: white;
+    transition: all 1s ease;
+}

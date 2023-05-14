@@ -24,7 +24,7 @@ body {
     font-family: 'Secular One', sans-serif;
     font-size: 1.6rem;
     line-height: 2rem;
-    background: -webkit-linear-gradient(rgb(167, 205, 180), rgb(252, 192, 80));
+    transition: all 1s ease;
 }
 
 /**Globales*/
@@ -53,6 +53,7 @@ img {
 /*==============================================================================================================*/
 .site-header {
     position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     right: 0;
@@ -113,7 +114,6 @@ img {
     height: 4rem;
     width: 4rem;
     border-radius: 50%;
-    border: 2px solid;
 }
 
 .img-carrito {
@@ -276,7 +276,7 @@ section .banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 999;
     cursor: pointer;
 }
 
