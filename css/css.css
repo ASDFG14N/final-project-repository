@@ -15,7 +15,7 @@ html {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
     text-transform: capitalize;
     font-size: 2rem;
 }
@@ -57,7 +57,7 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    background: -webkit-linear-gradient(rgb(252, 192, 80), rgb(167, 205, 180));
+    background: #000b31;
     padding: 1rem 0 1rem 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -74,7 +74,7 @@ img {
 }
 
 .barra a img {
-    max-width: 8rem;
+    max-width: 11rem;
     max-height: 8rem;
 }
 
@@ -183,11 +183,11 @@ td:last-child {
     letter-spacing: 0;
     border-radius: 12px;
     padding: 8px 23px 10px;
-    background-color: #ffffff;
+    background-color: rgb(218, 0, 64);
 }
 
-.btn-crear-cuenta {
-    background-color: #67886B;
+.btn-crear-cuenta a{
+    color: black;
 }
 
 .button {
@@ -224,14 +224,14 @@ td:last-child {
     border-radius: 6px;
     cursor: pointer;
     box-sizing: border-box;
-    background-color: chartreuse;
+    background-color: rgb(218, 0, 64);
 }
 
 /*==============================================================================================================*/
 /**Banner principal*/
 /*==============================================================================================================*/
 section .banner {
-    background-image: url('../img/fondo.png');
+    background-image: url('../img/portada4.jpg');
     background-size: cover;
     background-position: center center;
     height: 70rem;
@@ -364,8 +364,8 @@ section .banner {
 }
 
 .lista-populares .manga {
-    background-color: #247ae4;
-    border: #000000 solid 2px;
+    background-color: #000b31;
+    border: #000000 solid 1px;
 }
 
 /*Overlay img y descripcion*/
@@ -405,7 +405,7 @@ section .banner {
 /*Seccion del footter*/
 /*==============================================================================================================*/
 .footer {
-    background-color: #3d4043;
+    background: -webkit-linear-gradient(#000b31c9, #000b31e5, #000b31);
 }
 
 .footer,
