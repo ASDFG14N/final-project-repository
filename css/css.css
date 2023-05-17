@@ -33,6 +33,7 @@ img {
 }
 
 .contenedor {
+    width: 90%;
     max-width: 120rem;
     margin-left: auto;
     margin-right: auto;
@@ -138,6 +139,7 @@ img {
     border-left: 2px solid #a5a5a5da;
 }
 
+/*Tabla*/
 th,
 td {
     padding-right: 5rem;
@@ -186,7 +188,7 @@ td:last-child {
     background-color: rgb(218, 0, 64);
 }
 
-.btn-crear-cuenta a{
+.btn-crear-cuenta a {
     color: black;
 }
 
@@ -230,6 +232,36 @@ td:last-child {
     background-color: rgb(218, 0, 64);
 }
 
+/*Direccionales del carrusel*/
+.contenedor-carrusel i {
+    color: rgb(212, 211, 211);
+    display: flex;
+    top: 50%;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    font-size: 40px;
+    line-height: 46px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-carrusel i:first-child {
+    left: -50px;
+    z-index: 5;
+}
+
+.contenedor-carrusel i:last-child {
+    right: -50px;
+    z-index: 5;
+}
+
+
 /*==============================================================================================================*/
 /**Banner principal*/
 /*==============================================================================================================*/
@@ -241,7 +273,7 @@ section .banner {
 }
 
 /*==============================================================================================================*/
-/*Main - Listado de animes*/
+/*Main - Listado de mangas*/
 /*==============================================================================================================*/
 .contenido-principal {
     padding-top: 3rem;
@@ -251,6 +283,7 @@ section .banner {
     text-align: center;
 }
 
+/*Filtrador*/
 .busqueda {
     position: relative;
     width: 6rem;
@@ -355,7 +388,6 @@ section .banner {
     transform: rotate(315deg);
 }
 
-
 /*portadas-mangas*/
 .lista-populares {
     min-height: 100vh;
@@ -403,6 +435,72 @@ section .banner {
     text-align: center;
     padding: 10px;
 }
+
+/*==============================================================================================================*/
+/*animes ver*/
+/*==============================================================================================================*/
+
+.contenedor.hero-animes {
+    margin-top: 3rem;
+    height: 200rem;
+    background: #000b31;
+    margin-bottom: 3rem;
+}
+
+.contenedor.hero-animes p {
+    color: #fff;
+}
+
+.left-content {
+    justify-content: flex-start;
+}
+
+/*Estilos del carrusel
+----------------------*/
+
+.carrusel-lista a {
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.contendor-carrusel-sup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 420px;
+    background: red;
+}
+
+.contenedor-carrusel {
+    max-width: 1040px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.contenedor-carrusel .carrusel-lista {
+    padding-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carrusel-lista a img {
+    margin-right: 33px;
+    height: 271px;
+    border-radius: 15px;
+    width: 181px;
+    transition: .5s ease-in-out;
+}
+
+.carrusel-lista a:last-child img {
+    margin-right: 0;
+}
+
+.carrusel-lista a img:hover {
+    transform: scale(1.03);
+}
+
 
 /*==============================================================================================================*/
 /*Seccion del footter*/
