@@ -14,6 +14,7 @@
     <link href="../css/css.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/btn-dark.css">
+    <link rel="stylesheet" href="../css/prueba.css">
     <title>Ninja Otaku</title>
 </head>
 
@@ -38,10 +39,10 @@
 
                 <nav class="navegacion">
                     <div class="nav-1">
-                        <a href="#">Explorar</a>
-                        <a href="#">Manga</a>
-                        <a href="#">Noticias</a>
-                        <a href="#">Ayuda</a>
+                        <a href="#" class="link">Explorar</a>
+                        <a href="#" class="link">Manga</a>
+                        <a href="#" class="link">Noticias</a>
+                        <a href="#" class="link">Ayuda</a>
                     </div>
 
                     <div class="nav-2">
@@ -81,10 +82,17 @@
         </div> <!--fin del contenedor-->
     </header>
 
+    <!--Hero contenido - banner de la pagina-->
     <section>
         <div class="banner"></div>
+        <div class="contenedor contenedor-hero">
+            <div class="personaje">
+                <img src="../img/waifu1.png" alt="personaje">
+            </div>
+        </div>
     </section>
 
+    <!--Parte principal - venta de mangas-->
     <main>
 
         <div id="lista-mangas" class="contenedor contenido-principal">
@@ -346,6 +354,7 @@
         </div>
     </main> <!--Fin del main-->
 
+    <!--Ver animes-->
     <section>
         <div class="contenedor hero-animes">
             <div class="left-content">
@@ -399,7 +408,7 @@
                             <img src="../img/animes-haruhi.jpg" alt="bofuri">
                         </a>
 
-                        
+
                         <a href="#">
                             <img src="../img/animes-three.jpg" alt="bofuri">
                         </a>
@@ -430,6 +439,8 @@
 
     </section>
 
+
+    <!--Footer de la pagina-->
     <footer class="footer">
         <div class="contenedor">
             <div class="fila-footer">
@@ -475,7 +486,7 @@
                                 <li><a class="icono-redes" href="#"><i class="fa fa-facebook"></i></a></li>
                                 <li><a class="icono-redes" href="#"><i class="fa fa-twitter"></i></a></li>
                                 <li><a class="icono-redes" href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a class="icono-redes" href="#"><i class="fa fa-github"></i></a></li>
+                                <li><a class="icono-redes" href="https://github.com/ASDFG14N"><i class="fa fa-github"></i></a></li>
                             </ul>
                         </div>
                         <p class="descripcion-pagina">Todos los derechos reservados 2023 &copy;</p>
@@ -485,8 +496,10 @@
             </div>
 
         </div>
-    </footer>
+    </footer><!--fin del footer-->
 
+
+    <!-- agregar los aquí-->
     <script src="../js/buscador.js"></script>
     <script src="../js/carrito.js"></script>
     <script src="../js/btnDark.js"></script>

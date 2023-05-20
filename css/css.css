@@ -50,127 +50,6 @@ img {
 }
 
 /*==============================================================================================================*/
-/*Encabezado - header*/
-/*==============================================================================================================*/
-.site-header {
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #000b31;
-    padding: 1rem 0 1rem 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-}
-
-.barra {
-    width: 100%;
-    height: 7rem;
-    max-width: 130rem;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-}
-
-.barra a img {
-    max-width: 11rem;
-    max-height: 8rem;
-}
-
-.navegacion {
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-}
-
-.nav-1 {
-    display: flex;
-}
-
-.nav-1 a {
-    padding: 2rem;
-}
-
-.nav-2 {
-    grid-column-gap: 2rem;
-    grid-row-gap: 2rem;
-    display: flex;
-}
-
-.cuadro {
-    display: flex;
-    height: 9rem;
-    align-items: center;
-}
-
-.carrito {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fffefd;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 50%;
-}
-
-.img-carrito {
-    height: 2.1rem;
-}
-
-#carrito2 {
-    display: none;
-}
-
-.cuadro:hover #carrito2 {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 100%;
-    z-index: 1;
-    background-color: white;
-    padding: 2rem;
-    min-height: 40rem;
-    min-width: 40rem;
-    border-bottom: 2px solid #a5a5a5da;
-    border-left: 2px solid #a5a5a5da;
-}
-
-/*Tabla*/
-th,
-td {
-    padding-right: 5rem;
-    text-align: left;
-    border-bottom: 1.5px solid #e1e1e1da;
-}
-
-th:first-child,
-td:first-child {
-    padding-left: 0;
-}
-
-th:nth-child(4) {
-    padding-right: 0px;
-}
-
-th:last-child,
-td:last-child {
-    padding-right: 0;
-}
-
-.borrar-manga {
-    background-color: red;
-    border-radius: 50%;
-    padding: 2px 10px;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-/*==============================================================================================================*/
 /**Botones*/
 /*==============================================================================================================*/
 .btn-login a {
@@ -261,15 +140,218 @@ td:last-child {
     z-index: 5;
 }
 
+/*boton dark*/
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: transparent;
+    left: 10px;
+    bottom: 10px;
+    opacity: 0.5;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.dark {
+    background-color: #000b31e0;
+    color: white;
+    transition: all 1s ease;
+}
+
+/*Estilos de los iconos*/
+.fa-sun,
+.fa-moon {
+    color: #5c5c5c;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#toggle {
+    display: none;
+    height: 26px;
+    width: 26px;
+}
+
+/*==============================================================================================================*/
+/*Encabezado - header*/
+/*==============================================================================================================*/
+.site-header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #000b31;
+    padding: 1rem 0 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.barra {
+    width: 100%;
+    height: 7rem;
+    max-width: 130rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.barra a img {
+    max-width: 11rem;
+    max-height: 8rem;
+}
+
+.navegacion {
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.nav-1 {
+    display: flex;
+}
+
+.nav-1 a {
+    margin-right: 3rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/*Animaciones de los link del nav*/
+.link {
+    position: relative;
+}
+
+.link::before,
+.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.75s;
+}
+
+.link::before {
+    top: -3px;
+    transform-origin: left;
+}
+
+.link::after {
+    bottom: -3px;
+    transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-2 {
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    display: flex;
+}
+
+.cuadro {
+    display: flex;
+    height: 9rem;
+    align-items: center;
+}
+
+.carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fffefd;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+
+.img-carrito {
+    height: 2.1rem;
+}
+
+#carrito2 {
+    display: none;
+}
+
+.cuadro:hover #carrito2 {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: white;
+    padding: 2rem;
+    min-height: 40rem;
+    min-width: 40rem;
+    border-bottom: 2px solid #a5a5a5da;
+    border-left: 2px solid #a5a5a5da;
+}
+
+/*Tabla*/
+th,
+td {
+    padding-right: 5rem;
+    text-align: left;
+    border-bottom: 1.5px solid #e1e1e1da;
+}
+
+th:first-child,
+td:first-child {
+    padding-left: 0;
+}
+
+th:nth-child(4) {
+    padding-right: 0px;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 0;
+}
+
+.borrar-manga {
+    background-color: red;
+    border-radius: 50%;
+    padding: 2px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 
 /*==============================================================================================================*/
 /**Banner principal*/
 /*==============================================================================================================*/
-section .banner {
+/* section .banner {
     background-image: url('../img/portada4.jpg');
     background-size: cover;
     background-position: center center;
     height: 70rem;
+} */
+
+
+/* Contenedor-hero*/
+.contenedor-hero {
+    margin-top: 10rem;
+    height: 55rem;
+    width: 100%;
+    background: #000b31ce;
+    border-radius: 0px 0px 0px 200px;
+    -moz-border-radius: 0px 0px 0px 200px;
+    -webkit-border-radius: 0px 0px 0px 200px;
 }
 
 /*==============================================================================================================*/
@@ -283,7 +365,7 @@ section .banner {
     text-align: center;
 }
 
-/*Filtrador*/
+/*Filtrar*/
 .busqueda {
     position: relative;
     width: 6rem;
@@ -457,7 +539,6 @@ section .banner {
 
 /*Estilos del carrusel
 ----------------------*/
-
 .carrusel-lista a {
     padding: 0;
     margin: 0;
@@ -468,14 +549,21 @@ section .banner {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 420px;
-    background: red;
 }
 
 .contenedor-carrusel {
     max-width: 1040px;
     margin: 0 auto;
     position: relative;
+}
+
+.contenedor-carrusel:hover .carrusel-lista a img {
+    opacity: 0.5;
+}
+
+.carrusel-lista a img:hover {
+    opacity: 1 !important;
+    transform: scale(1.03);
 }
 
 .contenedor-carrusel .carrusel-lista {
@@ -490,20 +578,16 @@ section .banner {
     height: 271px;
     border-radius: 15px;
     width: 181px;
-    transition: .5s ease-in-out;
+    transition: 800ms all;
 }
 
 .carrusel-lista a:last-child img {
     margin-right: 0;
 }
 
-.carrusel-lista a img:hover {
-    transform: scale(1.03);
-}
-
 
 /*==============================================================================================================*/
-/*Seccion del footter*/
+/*Footter*/
 /*==============================================================================================================*/
 .footer {
     background: -webkit-linear-gradient(#000b31c9, #000b31e5, #000b31);
@@ -585,7 +669,9 @@ ul.iconos-redes {
 }
 
 .fa-instagram:hover {
-    background-color: #ff3087;
+    background: -webkit-linear-gradient(#d917cb, #ffba38);
+    background: -moz-linear-gradient(#d917cb, #ffba38);
+    background: -o-linear-gradient(#d917cb, #ffba38);
 }
 
 .fa-github {
