@@ -6,8 +6,8 @@ toggle.addEventListener('change', (evt) =>{
     console.log(check)
     document.body.classList.toggle('dark')
     if (check === true) {
-        icon.innerHTML = '<i class="fa-solid fa-sun"></i>'
-    }else{
         icon.innerHTML = '<i class="fa-solid fa-moon"></i>'
+    }else{
+        icon.innerHTML = '<i class="fa-solid fa-sun"></i>'
     }
 })
