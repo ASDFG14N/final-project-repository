@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/viewAnime.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="../img/5578525 - copia (2)_preview_rev_1.png">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--Encabezado-->
+    <header class="site-header inicio" id="site-header">
+
+
+        <!--btn dark-mode or normal-mode-->
+        <div class="btn" id="btn-dark">
+            <label for="toggle" id="icon"><i class="fa-solid fa-sun"></i></label>
+            <input type="checkbox" id="toggle">
+        </div>
+
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <!--Lodo de la empesa-->
+                <a href="index.html">
+                    <img src="../img/logo-pagina.jpg" alt="Logotipo de la empresa">
+                </a><!--fin del logo de la empesa-->
+
+                <nav class="navegacion">
+                    <div class="nav-1">
+                        <a href="#" class="link">Explorar</a>
+                        <div class="dropdown">
+                            <button class="dropbtn-manga">Manga</button>
+                            <div class="dropdown-contenido">
+                                <a href="#">Buscar Mangas</a>
+                                <a href="#">Top Manga</a>
+                                <a href="#">Recomendaciones</a>
+                                <a href="#">Reseñas</a>
+                                <a href="#">Mejor valorados</a>
+                            </div>
+                        </div>
+                        <a href="#" class="link">Noticias</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Ayuda</button>
+                            <div class="dropdown-contenido">
+                                <a href="#">Acerca de</a>
+                                <a href="#">Apoyo</a>
+                                <a href="#">Preguntas frecuentes</a>
+                                <a href="#">Terminos de uso</a>
+                            </div>
+                        </div>
+                        <!-- <a href="#" class="link">Ayuda</a> -->
+                    </div>
+
+                    <div class="nav-2">
+                        <div class="btn-login">
+                            <a href="login.html">Login</a>
+                        </div>
+
+                        <div class="btn-crear-cuenta">
+                            <a href="#">Crear cuenta</a>
+                        </div>
+                    </div>
+
+                </nav>
+            </div> <!--Barra-->
+
+        </div> <!--fin del contenedor-->
+    </header>
+
+    <!--Ver animes-->
+    <div class="contenedor hero-animes">
+        <h3>animes!!!</h3>
+
+        <main class="contenedor-videos">
+            <h3>Título del anime(va a ser variable)</h3>
+            <div class="opciones-servidores">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="opcion"><i class="fa-solid fa-server"></i> OPCION 1</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="opcion"><i class="fa-solid fa-server"></i> OPCION 2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="opcion"><i class="fa-solid fa-server"></i> OPCION 3</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="opcion"><i class="fa-solid fa-server"></i> OPCION 4</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contenedor-video">
+                <iframe width="710" height="440"
+                    src="https://mega.nz/embed#!5D1jDSoQ!LH_EdV_bR9gtzUeyvAmSigQLp4aHCesTGeRZscUg79o"
+                    frameborder="0"></iframe>
+            </div>
+
+            <div class="botones-del-usuario">
+                <div class="barra-prev-next">
+                    <button>
+                        <i class="fa-sharp fa-solid fa-arrow-left"></i>
+                        <span>Capítulo anterior</span>
+                    </button>
+                    <button>
+                        <a href="#">
+                            <i class="fa-solid fa-list"></i>
+                            <span>Lista de episodios</span>
+                        </a>
+                    </button>
+                    <button>
+                        <span>Siguiente capítulo</span>
+                        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+
+                <div class="descarga">
+                    <button>
+                        <a href="#">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Descagar</span>
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <div class="contenedor-comentarios">
+                <div class="comentarios-titulo-i">
+                    <h4>Comentarios</h4>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-comments"></i>
+                    </div>
+                </div>
+            </div>
+
+            <section>
+                <form class="formulario-comentario">
+                    <textarea name="comentario" placeholder="Escribe tu comentario"></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+    </div> <!--Fin de contenedor-->
+
+
+
+
+    <!--Footer de la pagina-->
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="fila-footer">
+                <div class="box1">
+                    <h3 class="titulos-footer">Sitio</h3>
+                    <ul class="lista-footer">
+                        <li>
+                            <a href="#">Preguntas fecuentes</a>
+                        </li>
+                        <li>
+                            <a href="#">Normas de la comunidad</a>
+                        </li>
+                        <li>
+                            <a href="#">Terminos de uso</a>
+                        </li>
+                        <li>
+                            <a href="#">Politica de Privacidad</a>
+                        </li>
+                        <li>
+                            <a href="#">Cookies</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box2">
+                    <h3 class="titulos-footer">Explorar</h3>
+                </div>
+
+                <div class="box3">
+                    <div>
+                        <h3 class="titulos-footer">Contenidos</h3>
+                        <p class="descripcion-pagina">Descripcion Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Iure, dicta suscipit. Tempore rem praesentium debitis fuga, alias totam nesciunt atque
+                            voluptatibus non error earum suscipit voluptates eius repellendus cupiditate corporis!</p>
+                    </div>
+                    <div>
+                        <h3 class="titulos-footer">Redes Sociales</h3>
+                        <div class="footer-iconos">
+                            <ul class="iconos-redes">
+                                <li><a class="icono-redes" href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a class="icono-redes" href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a class="icono-redes" href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a class="icono-redes" href="https://github.com/ASDFG14N"><i
+                                            class="fa fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                        <p class="descripcion-pagina">Todos los derechos reservados 2023 &copy;</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer><!--fin del footer-->
+
+
+    <script src="../js/btnDark.js"></script>
+</body>
+
+</html>

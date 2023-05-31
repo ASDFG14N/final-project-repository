@@ -9,7 +9,7 @@ const listItem = [
         age: 17,
         heart: "Soltera",
         colorEyes: "Azules",
-        training: "Rosa",
+        hairColor: "Rosa",
     },
     {
         titulo: "Miku Nakano (中野 三玖)",
@@ -20,7 +20,7 @@ const listItem = [
         age: 18,
         heart: "Soltera",
         colorEyes: "Azules",
-        training: "Castaño",
+        hairColor: "Castaño",
     },
     {
         titulo: "3",
@@ -31,7 +31,7 @@ const listItem = [
         age: 30,
         heart: "Soltera",
         colorEyes: "Rojo",
-        training: "Rubia",
+        hairColor: "Rubia",
     },
     {
         titulo: "Mahiru Shiina",
@@ -42,7 +42,7 @@ const listItem = [
         age: 30,
         heart: "Soltera",
         colorEyes: "0.6",
-        training: "Rubia",
+        hairColor: "Rubia",
     },
     {
         titulo: "Chizuru Ichinose (ちづる)",
@@ -53,7 +53,7 @@ const listItem = [
         age: 30,
         heart: "Soltera",
         colorEyes: "Marrones",
-        training: "Castaño",
+        hairColor: "Castaño",
     }
 ]
 
@@ -106,7 +106,7 @@ for (let i = 0; i < listItem.length; i++) {
                 <i class="fas fa-palette icon" style="color: #ffffff;"></i>
             </span>
             <span>Color de pelo</span>
-            <span>${listItem[i].training}</span>
+            <span>${listItem[i].hairColor}</span>
         </li>
     </ul>
     <a href="#" style="--i: 3">Conoce más</a>
@@ -126,7 +126,6 @@ for (let i = 0; i < listItem.length; i++) {
     `
 
 }
-
 
 const backgrounds = document.querySelectorAll(".carousel-bg");
 const indicatorNumbers = document.querySelectorAll(".carousel-indicators .number");
@@ -174,6 +173,7 @@ const setActive = (index) => {
 
 setActive(indiceActual);
 
+//Funciones que permiten al usuario deslizar manualmente los items
 prev.addEventListener("click", () => {
     indiceActual--;
     slide.style = `--i: ${indiceActual}`;
@@ -185,3 +185,17 @@ next.addEventListener("click", () => {
     slide.style = `--i: ${indiceActual}`;
     setActive(indiceActual);
 })
+
+//Funcion que desliza el carrusel automaticamente
+function autoSlide() {
+    indiceActual++;
+    //Reiniciar el indice en caso llegue al final  
+    if (indiceActual == listItem.length) {
+        indiceActual = 0;
+    }
+    slide.style = `--i: ${indiceActual}`;
+    setActive(indiceActual);
+    setTimeout(autoSlide, 4000);
+}
+//Deslizar automaticamente
+setTimeout(autoSlide, 4000);

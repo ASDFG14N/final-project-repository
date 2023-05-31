@@ -90,7 +90,7 @@ const imprimirCarrusel = () => {
         <div class="contenedor-carrusel">
         <i class="fa-solid fa-angle-left" id="izq"></i>
         <div class="carrusel-lista" id="carrusel-lista"> <!--carrusel contenido-->
-            <a href="#">
+            <a href="../html/viewAnime.html">
                 <img src="${portadas[portadaIndex]}" alt="bofuri">
             </a>
 

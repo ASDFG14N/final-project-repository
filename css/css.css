@@ -61,7 +61,7 @@ img {
 
 ::-webkit-scrollbar-thumb {
     background-image: linear-gradient(to top, #000b31e0 30%, rgba(3, 129, 212, 0.842) 100%);
-    border-radius: 2rem;
+    border-radius: .5rem;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }
@@ -112,15 +112,14 @@ img {
     display: inline-block;
     height: 38px;
     width: 14rem;
-    margin-left: 27px;
     padding: 0px 30px;
-    margin-bottom: 2rem;
-    color: #000;
+    color: #fff;
     text-align: center;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     line-height: 37px;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
     border-radius: 6px;
     cursor: pointer;
@@ -226,6 +225,13 @@ img {
     width: 26px;
 }
 
+
+
+/*==============================================================================================================*/
+/*Fin de loes estilos de los botones*/
+/*==============================================================================================================*/
+
+
 /*==============================================================================================================*/
 /*Encabezado - header*/
 /*==============================================================================================================*/
@@ -274,6 +280,52 @@ img {
     padding-bottom: 2px;
 }
 
+.dropdown{
+    position: relative;
+}
+
+.dropbtn-manga{
+    margin-right: 3rem;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+
+}
+.dropbtn{
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.dropdown-contenido{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.2);
+    z-index: 1;
+}
+
+.dropdown-contenido a{
+    margin: 0;
+    color: black;
+    font-size: 1.5rem;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-contenido a:hover{
+    background-color: #000b31;
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-contenido{
+    display: block;
+}
+
 /*Animaciones de los link del nav*/
 .link {
     position: relative;
@@ -306,6 +358,7 @@ img {
     transform: scaleX(1);
 }
 
+/*Botones de crear cuenta y login*/
 .nav-2 {
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
@@ -385,6 +438,12 @@ td:last-child {
     color: white;
     font-weight: bold;
 }
+
+/*==============================================================================================================*/
+/*Fin de los estilos del header*/
+/*==============================================================================================================*/
+
+
 
 /*==============================================================================================================*/
 /**Banner principal*/
@@ -947,13 +1006,36 @@ section .banner {
     padding: 10px;
 }
 
+.info-manga{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.box-info-manga {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-right: 6rem;
+}
+
+.precio{
+    margin: 0;
+}
+
+/*==============================================================================================================*/
+/*Fin del listado de mangas*/
+/*==============================================================================================================*/
+
+
 /*==============================================================================================================*/
 /*animes ver*/
 /*==============================================================================================================*/
 
 .contenedor.hero-animes {
     margin-top: 3rem;
-    height: 200rem;
+    height: auto;
     background: #000b31;
     margin-bottom: 3rem;
 }
@@ -964,6 +1046,10 @@ section .banner {
 
 .left-content {
     justify-content: flex-start;
+}
+
+.encabezado-carrusel{
+    margin: 1.5rem 0 .2rem 8rem;
 }
 
 /*Estilos del carrusel

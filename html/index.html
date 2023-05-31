@@ -13,16 +13,13 @@
     <link rel="icon" href="../img/5578525 - copia (2)_preview_rev_1.png">
     <link href="../css/css.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/btn-dark.css">
-    <link rel="stylesheet" href="../css/prueba.css">
     <title>Ninja Otaku</title>
 </head>
 
 <body>
 
     <!--Encabezado-->
-    <header class="site-header inicio" id="site-header">
-
+    <header class="site-header">
 
         <!--btn dark-mode or normal-mode-->
         <div class="btn" id="btn-dark">
@@ -40,18 +37,36 @@
                 <nav class="navegacion">
                     <div class="nav-1">
                         <a href="#" class="link">Explorar</a>
-                        <a href="#" class="link">Manga</a>
+                        <div class="dropdown">
+                            <button class="dropbtn-manga">Manga</button>
+                            <div class="dropdown-contenido">
+                                <a href="#">Buscar Mangas</a>
+                                <a href="#">Top Manga</a>
+                                <a href="#">Recomendaciones</a>
+                                <a href="#">Reseñas</a>
+                                <a href="#">Mejor valorados</a>
+                            </div>
+                        </div>
                         <a href="#" class="link">Noticias</a>
-                        <a href="#" class="link">Ayuda</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Ayuda</button>
+                            <div class="dropdown-contenido">
+                                <a href="#">Acerca de</a>
+                                <a href="#">Apoyo</a>
+                                <a href="#">Preguntas frecuentes</a>
+                                <a href="#">Terminos de uso</a>
+                            </div>
+                        </div>
+                        <!-- <a href="#" class="link">Ayuda</a> -->
                     </div>
 
                     <div class="nav-2">
                         <div class="btn-login">
-                            <a href="login.html">Login</a>
+                            <a href="#" id="btnLogin">Login</a>
                         </div>
 
                         <div class="btn-crear-cuenta">
-                            <a href="#">Crear cuenta</a>
+                            <a href="#" id="btnSignUp">Crear cuenta</a>
                         </div>
                     </div>
                     <div class="cuadro">
@@ -145,7 +160,7 @@
     <main>
 
         <div id="lista-mangas" class="contenedor contenido-principal">
-            <h2>Populares</h2>
+            <h2>Mangas Populares</h2>
 
             <!--filtrador de busqueda-->
             <div class="busqueda">
@@ -172,8 +187,10 @@
                         </div>
                     </a>
                     <div class="info-manga">
-                        <img src="../img/estrellas.png" alt="star">
-                        <p class="precio">S/ 50</p>
+                        <div class="box-info-manga">
+                            <img src="../img/estrellas.png" alt="star">
+                            <p class="precio">S/ 50</p>
+                        </div>
                         <a href="#" class="agregar-carrito buttonA a-full-width">adquirir</a>
                     </div>
                 </div>
@@ -193,8 +210,10 @@
                         </div>
                     </a>
                     <div class="info-manga">
-                        <img src="../img/estrellas.png" alt="star">
-                        <p class="precio">S/ 50</p>
+                        <div class="box-info-manga">
+                            <img src="../img/estrellas.png" alt="star">
+                            <p class="precio">S/ 50</p>
+                        </div>
                         <a href="#" class="agregar-carrito buttonA a-full-width">adquirir</a>
                     </div>
                 </div>
@@ -213,8 +232,10 @@
                         </div>
                     </a>
                     <div class="info-manga">
-                        <img src="../img/estrellas.png" alt="star">
-                        <p class="precio">S/ 50</p>
+                        <div class="box-info-manga">
+                            <img src="../img/estrellas.png" alt="star">
+                            <p class="precio">S/ 50</p>
+                        </div>
                         <a href="#" class="agregar-carrito buttonA a-full-width">adquirir</a>
                     </div>
                 </div>
@@ -233,8 +254,10 @@
                         </div>
                     </a>
                     <div class="info-manga">
-                        <img src="../img/estrellas.png" alt="star">
-                        <p class="precio">S/ 50</p>
+                        <div class="box-info-manga">
+                            <img src="../img/estrellas.png" alt="star">
+                            <p class="precio">S/ 50</p>
+                        </div>
                         <a href="#" class="agregar-carrito buttonA a-full-width">adquirir</a>
                     </div>
                 </div>
@@ -253,8 +276,10 @@
                         </div>
                     </a>
                     <div class="info-manga">
-                        <img src="../img/estrellas.png" alt="star">
-                        <p class="precio">S/ 50</p>
+                        <div class="box-info-manga">
+                            <img src="../img/estrellas.png" alt="star">
+                            <p class="precio">S/ 50</p>
+                        </div>
                         <a href="#" class="agregar-carrito buttonA a-full-width">adquirir</a>
                     </div>
                 </div>
@@ -273,8 +298,10 @@
                         </div>
                     </a>
                     <div class="info-manga">
-                        <img src="../img/estrellas.png" alt="star">
-                        <p class="precio">S/ 50</p>
+                        <div class="box-info-manga">
+                            <img src="../img/estrellas.png" alt="star">
+                            <p class="precio">S/ 50</p>
+                        </div>
                         <a href="#" class="agregar-carrito buttonA a-full-width">adquirir</a>
                     </div>
                 </div>
@@ -293,8 +320,10 @@
                         </div>
                     </a>
                     <div class="info-manga">
-                        <img src="../img/estrellas.png" alt="star">
-                        <p class="precio">S/ 50</p>
+                        <div class="box-info-manga">
+                            <img src="../img/estrellas.png" alt="star">
+                            <p class="precio">S/ 50</p>
+                        </div>
                         <a href="#" class="agregar-carrito buttonA a-full-width">adquirir</a>
                     </div>
                 </div>
@@ -313,8 +342,10 @@
                         </div>
                     </a>
                     <div class="info-manga">
-                        <img src="../img/estrellas.png" alt="star">
-                        <p class="precio">S/ 50</p>
+                        <div class="box-info-manga">
+                            <img src="../img/estrellas.png" alt="star">
+                            <p class="precio">S/ 50</p>
+                        </div>
                         <a href="#" class="agregar-carrito buttonA a-full-width">adquirir</a>
                     </div>
                 </div>
@@ -333,8 +364,10 @@
                         </div>
                     </a>
                     <div class="info-manga">
-                        <img src="../img/estrellas.png" alt="star">
-                        <p class="precio">S/ 50</p>
+                        <div class="box-info-manga">
+                            <img src="../img/estrellas.png" alt="star">
+                            <p class="precio">S/ 50</p>
+                        </div>
                         <a href="#" class="agregar-carrito buttonA a-full-width">adquirir</a>
                     </div>
                 </div>
@@ -353,8 +386,10 @@
                         </div>
                     </a>
                     <div class="info-manga">
-                        <img src="../img/estrellas.png" alt="star">
-                        <p class="precio">S/ 50</p>
+                        <div class="box-info-manga">
+                            <img src="../img/estrellas.png" alt="star">
+                            <p class="precio">S/ 50</p>
+                        </div>
                         <a href="#" class="agregar-carrito buttonA a-full-width">adquirir</a>
                     </div>
                 </div>
@@ -373,8 +408,10 @@
                         </div>
                     </a>
                     <div class="info-manga">
-                        <img src="../img/estrellas.png" alt="star">
-                        <p class="precio">S/ 50</p>
+                        <div class="box-info-manga">
+                            <img src="../img/estrellas.png" alt="star">
+                            <p class="precio">S/ 50</p>
+                        </div>
                         <a href="#" class="agregar-carrito buttonA a-full-width">adquirir</a>
                     </div>
                 </div>
@@ -393,8 +430,10 @@
                         </div>
                     </a>
                     <div class="info-manga">
-                        <img src="../img/estrellas.png" alt="star">
-                        <p class="precio">S/ 50</p>
+                        <div class="box-info-manga">
+                            <img src="../img/estrellas.png" alt="star">
+                            <p class="precio">S/ 50</p>
+                        </div>
                         <a href="#" class="agregar-carrito buttonA a-full-width">adquirir</a>
                     </div>
                 </div>
@@ -407,8 +446,7 @@
     <section>
         <div class="contenedor hero-animes">
             <div class="left-content">
-                <img src="#" alt="xd">
-                <div class="hero-description">
+                <div class="contenedor hero-description">
                     <p>Todo tu anime en un solo lugar, ¡en Crunchyroll! Accede al mayor catálogo de anime del mundo con
                         una suscripción de Crunchyroll. Hazte Premium y disfruta de tus series favoritas sin
                         comerciales,
@@ -418,29 +456,39 @@
                 </div>
             </div>
 
-            <h3>animes!!!</h3>
+            <h3 class="contenedor encabezado-carrusel">Nuevos Lanzamientos</h3>
 
             <!--Carrusel slider-->
             <div class="contendor-carrusel-sup">
             </div> <!--fin de la clase: contenedor-carrusel-->
             <!--Carrusel slider-->
 
-            <div class="contendor-carrusel-sup">
-            </div> <!--fin de la clase: contenedor-carrusel-->
-            <!--Carrusel slider-->
+            <h3 class="contenedor encabezado-carrusel">Recomendado para ti según tus preferencias</h3>
 
             <div class="contendor-carrusel-sup">
             </div> <!--fin de la clase: contenedor-carrusel-->
             <!--Carrusel slider-->
-            
-            <div class="contendor-carrusel-sup">
-            </div> <!--fin de la clase: contenedor-carrusel-->
-            <!--Carrusel slider-->
+
+            <h3 class="contenedor encabezado-carrusel">Géneros Destacados</h3>
 
             <div class="contendor-carrusel-sup">
             </div> <!--fin de la clase: contenedor-carrusel-->
             <!--Carrusel slider-->
-            
+
+            <h3 class="contenedor encabezado-carrusel">Animes Más Vistos</h3>
+
+            <div class="contendor-carrusel-sup">
+            </div> <!--fin de la clase: contenedor-carrusel-->
+            <!--Carrusel slider-->
+
+            <h3 class="contenedor encabezado-carrusel">Qué es Popular Ahora Mismo</h3>
+
+            <div class="contendor-carrusel-sup">
+            </div> <!--fin de la clase: contenedor-carrusel-->
+            <!--Carrusel slider-->
+
+            <h3 class="contenedor encabezado-carrusel">Clásicos Imprescindibles</h3>
+
             <div class="contendor-carrusel-sup">
             </div> <!--fin de la clase: contenedor-carrusel-->
         </div> <!--Fin de contenedor-->
