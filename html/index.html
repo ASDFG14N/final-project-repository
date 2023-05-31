@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../img/5578525 - copia (2)_preview_rev_1.png">
     <link href="../css/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login-signUp.css">
     <link rel="stylesheet" href="../css/normalize.css">
     <title>Ninja Otaku</title>
 </head>
@@ -96,6 +97,52 @@
 
         </div> <!--fin del contenedor-->
     </header>
+
+    <!--Ventana emergente de login y signup-->
+    <div class="contenedorL oculto">
+
+        <div class="form-contenedor">
+            <div class="slide-controls">
+                <input type="radio" name="slider" id="login" checked>
+                <input type="radio" name="slider" id="signup">
+
+                <label for="login" class="slide login">Iniciar Sessión</label>
+                <label for="signup" class="slide signup">Crear cuenta</label>
+                <div class="slide-tab"></div>
+            </div>
+            <div class="form-inner">
+                <form action="#" class="login">
+                    <div class="campo">
+                        <input type="text" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="campo">
+                        <input type="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="pass-link"><a href="#">¿olvidaste tu contraseña?</a></div>
+                    <div class="campo">
+                        <input type="submit" value="Iniciar Sessión">
+                    </div>
+                    <div class="signup-link">¿Aún no eres parte de Ninja Otaku? <a href="#">Crear cuenta</a></div>
+                </form>
+
+                <form action="#" class="signup">
+                    <div class="campo">
+                        <input type="text" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="campo">
+                        <input type="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="campo">
+                        <input type="password" placeholder="Confirma tu contraseña" required>
+                    </div>
+
+                    <div class="campo">
+                        <input type="submit" value="Crear Cuenta">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> <!--Fin del contenedor de la ventana-->
 
     <!--Hero contenido - banner de la pagina-->
     <section>
@@ -562,6 +609,7 @@
     <script src="../js/imprimir.js"></script>
     <script src="../js/carrusel.js"></script>
     <script src="../js/carouselBanner.js"></script>
+    <script src="../js/login-signUp.js"></script>
 </body>
 
 </html>
