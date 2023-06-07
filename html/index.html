@@ -14,6 +14,7 @@
     <link href="../css/css.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/login-signUp.css">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/responsive.css">
     <title>Ninja Otaku</title>
 </head>
 
@@ -24,33 +25,42 @@
 
         <!--btn dark-mode or normal-mode-->
         <div class="btn" id="btn-dark">
-            <label for="toggle" id="icon"><i class="fa-solid fa-sun"></i></label>
+            <label for="toggle" class="icon"><i class="fa-solid fa-sun"></i></label>
             <input type="checkbox" id="toggle">
         </div>
 
         <div class="contenedor contenido-header">
             <div class="barra">
                 <!--Lodo de la empesa-->
-                <a href="#">
+                <a href="../html/index.html">
                     <img src="../img/logo-pagina.jpg" alt="Logotipo de la empresa">
                 </a><!--fin del logo de la empesa-->
 
                 <nav class="navegacion">
                     <div class="nav-1">
-                        <a href="#" class="link">Explorar</a>
                         <div class="dropdown">
-                            <button class="dropbtn-manga">Manga</button>
+                            <button class="dropbtn-manga">Anime <i class="fa-solid fa-angle-down"></i></button>
+                            <div class="dropdown-contenido">
+                                <a href="#">Buscar Animes</a>
+                                <a href="#">Top Semanal</a>
+                                <a href="#">Próximos Estrenos</a>
+                                <a href="#">Recomendaciones</a>
+                                <a href="#">Mejor valorados</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn-manga">Manga <i class="fa-solid fa-angle-down"></i></button>
                             <div class="dropdown-contenido">
                                 <a href="#">Buscar Mangas</a>
                                 <a href="#">Top Manga</a>
-                                <a href="#">Recomendaciones</a>
+                                <a href="#">Próximos Estrenos</a>
                                 <a href="#">Reseñas</a>
                                 <a href="#">Mejor valorados</a>
                             </div>
                         </div>
                         <a href="#" class="link">Noticias</a>
                         <div class="dropdown">
-                            <button class="dropbtn">Ayuda</button>
+                            <button class="dropbtn">Ayuda <i class="fa-solid fa-angle-down"></i></button>
                             <div class="dropdown-contenido">
                                 <a href="#">Acerca de</a>
                                 <a href="#">Apoyo</a>
@@ -63,13 +73,29 @@
 
                     <div class="nav-2">
                         <div class="btn-login">
-                            <a href="#" id="btnLogin">Login</a>
+                            <a href="#" id="btnLogin">Acceder</a>
                         </div>
 
                         <div class="btn-crear-cuenta">
                             <a href="#" id="btnSignUp">Crear cuenta</a>
                         </div>
                     </div>
+
+                    <!--Boton dark en el header responsive-->
+                    <div class="btnDarkHeader barraOculta" id="btn-dark">
+                        <label for="toggle2" class="icon2"><i class="fa-solid fa-sun"></i></label>
+                        <input type="checkbox" id="toggle2">
+                    </div>
+
+                    <!--Menu hamburguesa-->
+                    <div class="contenedor-hamburguesa">
+                        <div class="barra-menu barraOculta" id="barra_menu">
+                            <span class="line1-barra-menu" id="line1"></span>
+                            <span class="line2-barra-menu" id="line2"></span>
+                            <span class="line3-barra-menu" id="line3"></span>
+                        </div>
+                    </div>
+
                     <div class="cuadro">
                         <div class="carrito">
                             <img class="img-carrito" src="../img/cart-shopping-solid.svg" alt="">
@@ -97,6 +123,69 @@
 
         </div> <!--fin del contenedor-->
     </header>
+
+    <!--Mobile menu responsive-->
+    <aside id="navMobile1" >
+        <div class="nav-mobile" id="navMobile" style="display: none;">
+
+            <div class="search-mobile">
+                <form role="search">
+                    <label class="search-mobile">
+                        <input type="search" class="search-mobile__field" placeholder="Buscar...">
+                        <button class="search__submit">
+                            <span>
+                                <i class="fas fa-search"></i>
+                            </span>
+                        </button>
+                    </label>
+                </form>
+            </div>
+
+            <div class="linksLogin">
+                <div class="btn-login">
+                    <a href="#" id="btnLogin">Acceder</a>
+                </div>
+
+                <div class="btn-crear-cuenta">
+                    <a href="#" id="btnSignUp">Crear cuenta</a>
+                </div>
+            </div>
+
+            <div class="navMobile">
+                <button class="accordionGeneral"><i class="fa-sharp fa-solid fa-house"></i>Inicio</button>
+
+                <button class="accordion"><i class="fa-solid fa-tv"></i>anime <i class="fa-solid fa-angle-down"></i></button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="#">Top Semanal</a></li>
+                        <li><a href="#">Próximos Estrenos</a></li>
+                        <li><a href="#">Mejor valorados</a></li>
+                    </ul>
+                </div>
+            
+                <button class="accordion"><i class="fa-solid fa-newspaper"></i> manga <i class="fa-solid fa-angle-down"></i></button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="#">Top Manga</a></li>
+                        <li><a href="#">Reseñas</a></li>
+                        <li><a href="#">Mejor valorados</a></li>
+                    </ul>
+                </div>
+            
+                <button class="accordionGeneral"><i class="fa-solid fa-newspaper"></i> noticias</button>
+    
+                <button class="accordion"><i class="fa-sharp fa-solid fa-circle-info"></i> Ayuda <i class="fa-solid fa-angle-down"></i></button>
+                <div class="panel">
+                    <ul>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Apoyo</a></li>
+                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#">Terminos de uso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside> <!--Fin del mobile menu responsive-->
 
     <!--Ventana emergente de login y signup-->
     <div class="contenedorL oculto">
@@ -539,7 +628,7 @@
             <div class="contendor-carrusel-sup">
             </div> <!--fin de la clase: contenedor-carrusel-->
         </div> <!--Fin de contenedor-->
-    </section>
+    </section><!--Fin de la seccion ver animes-->
 
 
     <!--Footer de la pagina-->
@@ -610,6 +699,7 @@
     <script src="../js/carrusel.js"></script>
     <script src="../js/carouselBanner.js"></script>
     <script src="../js/login-signUp.js"></script>
+    <script src="../js/menuResponsive.js"></script>
 </body>
 
 </html>

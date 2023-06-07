@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="Gian">
+    <meta name="description" content="Pagina de compra de mangas y base de datos de animes">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/viewAnime.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../img/5578525 - copia (2)_preview_rev_1.png">
-    <title>Document</title>
+    <link href="../css/css.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/viewAnime.css">
+    <link rel="stylesheet" href="../css/login-signUp.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <title>Ninja Otaku</title>
 </head>
 
 <body>
-    <!--Encabezado-->
-    <header class="site-header inicio" id="site-header">
 
+    <!--Encabezado-->
+    <header class="site-header">
 
         <!--btn dark-mode or normal-mode-->
         <div class="btn" id="btn-dark">
@@ -28,26 +33,35 @@
         <div class="contenedor contenido-header">
             <div class="barra">
                 <!--Lodo de la empesa-->
-                <a href="index.html">
+                <a href="../html/index.html">
                     <img src="../img/logo-pagina.jpg" alt="Logotipo de la empresa">
                 </a><!--fin del logo de la empesa-->
 
                 <nav class="navegacion">
                     <div class="nav-1">
-                        <a href="#" class="link">Explorar</a>
                         <div class="dropdown">
-                            <button class="dropbtn-manga">Manga</button>
+                            <button class="dropbtn-manga">Anime <i class="fa-solid fa-angle-down"></i></button>
+                            <div class="dropdown-contenido">
+                                <a href="#">Buscar Animes</a>
+                                <a href="#">Top Semanal</a>
+                                <a href="#">Próximos Estrenos</a>
+                                <a href="#">Recomendaciones</a>
+                                <a href="#">Mejor valorados</a>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="dropbtn-manga">Manga <i class="fa-solid fa-angle-down"></i></button>
                             <div class="dropdown-contenido">
                                 <a href="#">Buscar Mangas</a>
                                 <a href="#">Top Manga</a>
-                                <a href="#">Recomendaciones</a>
+                                <a href="#">Próximos Estrenos</a>
                                 <a href="#">Reseñas</a>
                                 <a href="#">Mejor valorados</a>
                             </div>
                         </div>
                         <a href="#" class="link">Noticias</a>
                         <div class="dropdown">
-                            <button class="dropbtn">Ayuda</button>
+                            <button class="dropbtn">Ayuda <i class="fa-solid fa-angle-down"></i></button>
                             <div class="dropdown-contenido">
                                 <a href="#">Acerca de</a>
                                 <a href="#">Apoyo</a>
@@ -60,11 +74,42 @@
 
                     <div class="nav-2">
                         <div class="btn-login">
-                            <a href="login.html">Login</a>
+                            <a href="#" id="btnLogin">Login</a>
                         </div>
 
                         <div class="btn-crear-cuenta">
-                            <a href="#">Crear cuenta</a>
+                            <a href="#" id="btnSignUp">Crear cuenta</a>
+                        </div>
+                    </div>
+
+                    <!--Menu hamburguesa-->
+                    <div class="contenedor-hamburguesa">
+                        <div class="barra-menu barraOculta" id="barra_menu">
+                            <span class="line1-barra-menu" id="line1"></span>
+                            <span class="line2-barra-menu" id="line2"></span>
+                            <span class="line3-barra-menu" id="line3"></span>
+                        </div>
+                    </div>
+
+                    <div class="cuadro">
+                        <div class="carrito">
+                            <img class="img-carrito" src="../img/cart-shopping-solid.svg" alt="">
+                            <div id="carrito2">
+                                <table id="lista-carrito" class="t-full-width">
+                                    <thead>
+                                        <tr>
+                                            <th>Portada</th>
+                                            <th>Nombre</th>
+                                            <th>Precio</th>
+                                            <th>Cantidad</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                </table>
+
+                                <a href="#" id="vaciar-carrito" class="button t-full-width">Vaciar Carrito</a>
+                            </div>
                         </div>
                     </div>
 
@@ -73,6 +118,53 @@
 
         </div> <!--fin del contenedor-->
     </header>
+
+    <!--Ventana emergente de login y signup-->
+    <div class="contenedorL oculto">
+
+        <div class="form-contenedor">
+            <div class="slide-controls">
+                <input type="radio" name="slider" id="login" checked>
+                <input type="radio" name="slider" id="signup">
+
+                <label for="login" class="slide login">Iniciar Sessión</label>
+                <label for="signup" class="slide signup">Crear cuenta</label>
+                <div class="slide-tab"></div>
+            </div>
+            <div class="form-inner">
+                <form action="#" class="login">
+                    <div class="campo">
+                        <input type="text" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="campo">
+                        <input type="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="pass-link"><a href="#">¿olvidaste tu contraseña?</a></div>
+                    <div class="campo">
+                        <input type="submit" value="Iniciar Sessión">
+                    </div>
+                    <div class="signup-link">¿Aún no eres parte de Ninja Otaku? <a href="#">Crear cuenta</a></div>
+                </form>
+
+                <form action="#" class="signup">
+                    <div class="campo">
+                        <input type="text" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="campo">
+                        <input type="password" placeholder="Contraseña" required>
+                    </div>
+                    <div class="campo">
+                        <input type="password" placeholder="Confirma tu contraseña" required>
+                    </div>
+
+                    <div class="campo">
+                        <input type="submit" value="Crear Cuenta">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> <!--Fin del contenedor de la ventana-->
+
 
     <!--Ver animes-->
     <div class="contenedor hero-animes">
@@ -158,8 +250,6 @@
     </div> <!--Fin de contenedor-->
 
 
-
-
     <!--Footer de la pagina-->
     <footer class="footer">
         <div class="contenedor">
@@ -220,7 +310,9 @@
     </footer><!--fin del footer-->
 
 
+    <!-- agregar los aquí-->
     <script src="../js/btnDark.js"></script>
+    <script src="../js/login-signUp.js"></script>
 </body>
 
 </html>

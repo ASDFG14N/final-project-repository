@@ -1,6 +1,11 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 @import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
 
+:root{
+    --color-redPage: rgb(218, 0, 64);
+    --clor-bluePage: #000b31;
+}
+
 html {
     font-size: 62.5%;
     /*10px == 1rem*/
@@ -27,6 +32,7 @@ body {
     background-color: #000b31e0;
     color: white;
     transition: all 1s ease;
+    width: 100%;
 }
 
 /**Globales*/
@@ -52,7 +58,7 @@ img {
 }
 
 ::-webkit-scrollbar {
-    width: 1.7rem;
+    width: 1rem;
 }
 
 ::-webkit-scrollbar-track {
@@ -81,7 +87,7 @@ img {
     letter-spacing: 0;
     border-radius: 12px;
     padding: 8px 23px 10px;
-    background-color: rgb(218, 0, 64);
+    background-color: var(--color-redPage);
 }
 
 .btn-crear-cuenta a {
@@ -124,8 +130,49 @@ img {
     border-radius: 6px;
     cursor: pointer;
     box-sizing: border-box;
-    background-color: rgb(218, 0, 64);
+    background-color: var(--color-redPage);
 }
+
+/*boton hamburguesa*/
+.barraOculta{
+    display: none;
+}
+
+.barra-menu{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.barra-menu span{
+    display: block;
+    width: 100%; /*Ocupa todo el ancho del padre*/
+    height: 3px;
+    background: #fff;
+    margin-top: 6px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    transform-origin: 0px 100%;
+    transition: all 400ms;
+}
+
+/*Animacion del boton hamburgesa*/
+.activeline1-barra-menu{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activeline2-barra-menu{
+    opacity: 0;
+    margin-left: -30px;
+}
+
+.activeline3-barra-menu{
+    transform: rotate(-45deg) translate(0px, -1px);
+}
+/*fin boton hamburguesa*/
+
 
 /*Boton mas detalles del carrusel principal-banner*/
 .content a {
@@ -138,7 +185,7 @@ img {
     height: 40px;
     border: none;
     border-radius: 12px;
-    background-color: rgb(218, 0, 64);
+    background-color: var(--color-redPage);
     font-family: inherit;
     text-transform: uppercase;
     font-weight: 500;
@@ -226,7 +273,6 @@ img {
 }
 
 
-
 /*==============================================================================================================*/
 /*Fin de loes estilos de los botones*/
 /*==============================================================================================================*/
@@ -241,7 +287,7 @@ img {
     top: 0;
     left: 0;
     right: 0;
-    background: #000b31;
+    background: var(--clor-bluePage);
     padding: 1rem 0 1rem 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
 }
@@ -249,7 +295,6 @@ img {
 .barra {
     width: 100%;
     height: 7rem;
-    max-width: 130rem;
     justify-content: space-between;
     align-items: center;
     margin-left: auto;
@@ -285,18 +330,25 @@ img {
 }
 
 .dropbtn-manga{
+    display: flex;
+    align-items: flex-end;
     margin-right: 3rem;
     background-color: transparent;
     border: none;
     font-size: 2rem;
     color: #fff;
+    gap: 4px;
 
 }
+
 .dropbtn{
+    display: flex;
     background-color: transparent;
     border: none;
     font-size: 2rem;
     color: #fff;
+    align-items: flex-end;
+    gap: 4px;
 }
 
 .dropdown-contenido{
@@ -318,7 +370,7 @@ img {
 }
 
 .dropdown-contenido a:hover{
-    background-color: #000b31;
+    background-color: var(--clor-bluePage);
     color: #fff;
 }
 
@@ -449,7 +501,7 @@ td:last-child {
 /**Banner principal*/
 /*==============================================================================================================*/
 section .banner {
-    background-color: #000b31;
+    background-color: var(--clor-bluePage);
     border-radius: 30px;
     margin-top: 11rem;
     position: relative;
@@ -486,7 +538,7 @@ section .banner {
     width: 16px;
     height: 30px;
     border-radius: 50%;
-    background-color: #000b31;
+    background-color: var(--clor-bluePage);
     box-shadow: 15px 0 #000b31, 30px 0 #000b31, 45px 0 #000b31;
     left: -11px;
     top: -46px;
@@ -628,7 +680,7 @@ section .banner {
 
 /*Estilos del rombo*/
 .number.active::after {
-    background-color: rgb(218, 0, 64);
+    background-color: var(--color-redPage);
     transform: rotate(45deg) scale(1);
 }
 
@@ -969,7 +1021,7 @@ section .banner {
 }
 
 .lista-populares .manga {
-    background-color: #000b31;
+    background-color: var(--clor-bluePage);
     /* border: #000000 solid 1px; */
 }
 
@@ -1036,7 +1088,7 @@ section .banner {
 .contenedor.hero-animes {
     margin-top: 3rem;
     height: auto;
-    background: #000b31;
+    background: var(--clor-bluePage);
     margin-bottom: 3rem;
 }
 

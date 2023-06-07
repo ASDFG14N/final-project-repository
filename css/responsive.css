@@ -1,0 +1,289 @@
+/* Media query para teléfonos móviles */
+@media (max-width: 600px) {
+
+    /* Estilos específicos para teléfonos móviles */
+    :root {
+        --width-contenedor: calc(100% - 7rem);
+    }
+
+    body {
+        width: 100%;
+    }
+
+    .nav-1,
+    .nav-2,
+    .cuadro {
+        display: none;
+    }
+
+    .barraOculta {
+        display: block;
+    }
+
+    .titulo {
+        display: none;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .contendor-carrusel-sup {
+        display: none;
+    }
+
+    .encabezado-carrusel {
+        display: none;
+    }
+
+    .barra a img {
+        max-width: 8.5rem;
+        max-height: 6rem;
+    }
+
+    section .banner {
+        height: 40rem;
+    }
+
+    aside {
+        display: flex;
+        position: fixed;
+        top: 9rem;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        background: rgb(31, 40, 74);
+
+        left: 100%;
+        opacity: 0;
+        transition: left 400ms ease, opacity 400ms ease;
+    }
+
+    .nav-mobile_visible {
+        left: 0;
+        opacity: 1;
+    }
+
+    .nav-mobile {
+        width: calc(100% - 10rem);
+        background: transparent;
+        height: 101%;
+        margin: auto;
+    }
+
+    .nav-mobile ul {
+        padding: 0px;
+    }
+
+    .nav-mobile li {
+        list-style: none;
+        margin-bottom: 3rem;
+    }
+
+    .lista-populares {
+        min-height: 100vh;
+        width: 100%;
+        display: grid;
+        grid: repeat(1, auto) / repeat(2, 1fr);
+        /* grid-template-columns: repeat(auto-fit, minmax(min(18rem, 100%), 1fr)); */
+        gap: 1rem;
+    }
+
+    .fila-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lista-footer li a {
+        font-size: 1.5rem;
+    }
+
+    .box3.descripcion-pagina {
+        font-size: 1.5rem;
+    }
+
+
+    /*Estilos del boton buscar*/
+    .search-mobile {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    input.search-mobile__field {
+        width: var(--width-contenedor);
+        margin-right: 5px;
+        border-radius: 1rem;
+        padding: 1rem;
+        border: none;
+    }
+
+    input.search-mobile__field {
+        outline: none;
+    }
+
+    .search__submit {
+        color: #fff;
+        background-color: rgb(218, 0, 64);
+        padding: 12px 12px 12px 12px;
+        border-radius: 1rem;
+        cursor: pointer;
+        border: none;
+    }
+
+    .linksLogin {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+    }
+
+    .btn-login a,
+    .btn-crear-cuenta a {
+        color: #fff !important;
+        font-size: 1.2rem;
+    }
+
+    .btn-login,
+    .btn-crear-cuenta {
+        max-height: 4rem;
+        display: flex;
+        align-items: center;
+        letter-spacing: 1px;
+        border-radius: 7px;
+        padding: 8px 23px 10px;
+        background-color: var(--color-redPage);
+        box-shadow: 0px 0px 12px 4px rgba(232, 19, 19, 0.75);
+        -webkit-box-shadow: 0px 0px 12px 4px rgba(232, 19, 19, 0.75);
+        -moz-box-shadow: 0px 0px 12px 4px rgba(232, 19, 19, 0.75);
+    }
+
+    .navMobile {
+        margin-top: 2rem;
+        display: grid;
+        gap: 1rem;
+    }
+
+    .accordionGeneral {
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        padding: 0;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+    }
+
+    i.fa-sharp.fa-solid.fa-house,
+    i.fa-solid.fa-tv,
+    i.fa-solid.fa-newspaper,
+    i.fa-sharp.fa-solid.fa-circle-info {
+        margin-right: 1rem;
+    }
+
+    .accordion {
+        background-color: transparent;
+        color: #fff;
+        cursor: pointer;
+        padding: 0;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 1.8rem;
+        text-transform: capitalize;
+    }
+
+    .panel {
+        padding-left: 3rem;
+        display: none;
+        background-color: transparent;
+        overflow: hidden;
+    }
+
+    .panel ul {
+        margin: 0;
+    }
+
+    .panel ul li {
+        margin: 0;
+        padding-bottom: 1rem;
+    }
+
+    .panel ul li:last-child {
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .panel ul li a {
+        font-size: 1.7rem;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .dark {
+        background-color: #fff;
+        transition: all 1s ease;
+    }
+
+    /*Estilos de los iconos*/
+    .fa-sun,
+    .fa-moon {
+        color: #ffffff;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+
+    #toggle2 {
+        display: none;
+        height: 26px;
+        width: 26px;
+    }
+
+}
+
+/* Media query para tabletas */
+@media (max-width: 768px) {
+    /* Estilos específicos para tabletas */
+    /* Aquí puedes ajustar los estilos para que se vean bien en tabletas */
+    /* .nav-1,
+    .nav-2,
+    .cuadro{
+        display: none;
+    } */
+
+    .barraOculta {
+        display: block;
+    }
+}
+
+/* Media query para laptops */
+@media (max-width: 992px) {
+    /* Estilos específicos para laptops */
+    /* .nav-1,
+    .nav-2,
+    .cuadro{
+        display: none;
+    } */
+
+    .barraOculta {
+        display: block;
+    }
+}
+
+/* Media query para televisores */
+@media (max-width: 1400px) {
+
+    /* Estilos específicos para televisores */
+    /* Aquí puedes ajustar los estilos para que se vean bien en laptops */
+    .nav-mobile {
+        display: none;
+    }
+}
