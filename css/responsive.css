@@ -12,28 +12,18 @@
 
     .nav-1,
     .nav-2,
-    .cuadro {
+    .cuadro,
+    .titulo,
+    .description,
+    .overlay,
+    .carousel,
+    .contendor-carrusel-sup,
+    .encabezado-carrusel {
         display: none;
     }
 
     .barraOculta {
         display: block;
-    }
-
-    .titulo {
-        display: none;
-    }
-
-    .carousel {
-        display: none;
-    }
-
-    .contendor-carrusel-sup {
-        display: none;
-    }
-
-    .encabezado-carrusel {
-        display: none;
     }
 
     .barra a img {
@@ -245,6 +235,136 @@
         display: none;
         height: 26px;
         width: 26px;
+    }
+
+    /*============================================================================================*/
+    /*Seccion del banner del movil*/
+    /*============================================================================================*/
+
+    .slide-visible {
+        display: block;
+    }
+
+    section .banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor-slide-mobile img {
+        display: block;
+        max-width: 100%;
+    }
+
+    .slide {
+        width: 20rem;
+        display: grid;
+        height: 30rem;
+        overflow: hidden;
+    }
+
+    .slide-items {
+        position: relative;
+        grid-area: 1/1;
+        overflow: hidden;
+    }
+
+    /*Estilos de los botones izquierda y derecha del slide resposive*/
+    .slide-prev,
+    .slide-next{
+        background-color: var(--color-redPage);
+        height: 3rem;
+        width: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15%;
+        cursor: pointer;
+        border: none;
+    }
+
+    .slide-prev{
+        transform: translate(-10px, -10px);
+    }
+    .slide-next{
+        transform: translate(10px, -10px);
+    }
+
+    .slide-prev i,
+    .slide-next i{
+        color: #fff;
+        font-size: 2.5rem;
+    }
+    /*Fin de los estilos de los botones izquierda y derecha del slide resposive*/
+
+    .slide-items img {
+        background-color: var(--bg);
+        border-radius: 10px;
+        border: 5px solid #ffffff7f;
+        padding: 10px;
+        height: 28rem;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .slide-items>* {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .slide-items>.active {
+        position: relative;
+        opacity: 1;
+        pointer-events: initial;
+    }
+
+    .slide-thumb {
+        position: sticky;
+        top: 22rem;
+        display: flex;
+    }
+
+    .slide-thumb>span {
+        flex: 1;
+        display: block;
+        height: 0.4rem;
+        background: rgba(255, 255, 255, 0.9);
+        margin: 3px;
+        margin-top: 1.2rem;
+        border-radius: 2px;
+        overflow: hidden;
+    }
+
+    .slide-thumb>span.active:after {
+        content: "";
+        display: block;
+        height: inherit;
+        background: var(--color-redPage);
+        border-radius: 3px;
+        transform: translateX(-100%);
+        animation: thumb 5s forwards linear;
+    }
+
+    @keyframes thumb {
+        to {
+            transform: initial;
+        }
+    }
+
+    .titulo {
+        width: 20rem;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        z-index: 5;
+        font-size: 2rem;
+        top: 1.7rem;
+    }
+    .titulo p {
+        margin: 0;
     }
 
 }

@@ -1253,3 +1253,7 @@ ul.iconos-redes {
 .fa-github:hover {
     background-color: #5a32a3;
 }
+
+.slide-visible{
+    display: none;
+}

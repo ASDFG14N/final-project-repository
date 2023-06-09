@@ -1,0 +1,57 @@
+[
+    {
+        "titulo": "Ai Hoshino(星野 アイ)",
+        "descripcion": "Personaje principal de la serie de manga Oshi no Ko, era la ídolo principal del ahora desaparecido B-Komachi. Su vida da un giro cuando quedó embarazada de mellizos.",
+        "image": "../img/Ai hoshino.png",
+        "bgColor": "#f6dbf8",
+        "target": "Any",
+        "age": 16,
+        "heart": "Soltera",
+        "colorEyes": "Rojo",
+        "hairColor": "Azul"
+    },
+    {
+        "titulo": "Miku Nakano (中野 三玖)",
+        "descripcion": "Es la tercera hermana de las Quintillizas Nakano. Tiene una personalidad tímida. Es una chica que se suele mostrar sin emociones",
+        "image": "../img/waifu2.png",
+        "bgColor": "#deef58",
+        "target": "Mayo 5",
+        "age": 18,
+        "heart": "Soltera",
+        "colorEyes": "Azules",
+        "hairColor": "Castaño"
+    },
+    {
+        "titulo": "Chika Fujiwara (藤原 千花)",
+        "descripcion": "Protagonista de la serie Kaguya-sama wa Kokurasetai. Es una estudiante de tercer año de secundaria en la Academia Shuchi'in, actual secretaria del Consejo Estudiantil de su escuela.",
+        "image": "../img/waifu1.png",
+        "bgColor": "#6ce3f2",
+        "target": "Marzo 3",
+        "age": 17,
+        "heart": "Soltera",
+        "colorEyes": "Azules",
+        "hairColor": "Rosa"
+    },
+    {
+        "titulo": "Mahiru Shiina",
+        "descripcion": "Lorem ipsum dolor sit amet exercitationem cuis maxime assumenda necessitatibus accusamus illum nesciunt.",
+        "image": "../img/mahiru.png",
+        "bgColor": "#f2dfce",
+        "target": "Any",
+        "age": 30,
+        "heart": "Soltera",
+        "colorEyes": "0.6",
+        "hairColor": "Rubia"
+    },
+    {
+        "titulo": "Chizuru Ichinose (ちづる)",
+        "descripcion": "Es una estudiante universitaria en la Universidad de Nerima, actualmente vive en la habitación 204 de Royal Hills Nerima, al lado de Kazuya Kinoshita.",
+        "image": "../img/waifu4.png",
+        "bgColor": "#dd6bc8",
+        "target": "Any",
+        "age": 30,
+        "heart": "Soltera",
+        "colorEyes": "Marrones",
+        "hairColor": "Castaño"
+    }
+]

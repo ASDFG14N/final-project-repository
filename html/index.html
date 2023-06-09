@@ -125,7 +125,7 @@
     </header>
 
     <!--Mobile menu responsive-->
-    <aside id="navMobile1" >
+    <aside id="navMobile1">
         <div class="nav-mobile" id="navMobile" style="display: none;">
 
             <div class="search-mobile">
@@ -154,7 +154,8 @@
             <div class="navMobile">
                 <button class="accordionGeneral"><i class="fa-sharp fa-solid fa-house"></i>Inicio</button>
 
-                <button class="accordion"><i class="fa-solid fa-tv"></i>anime <i class="fa-solid fa-angle-down"></i></button>
+                <button class="accordion"><i class="fa-solid fa-tv"></i>anime <i
+                        class="fa-solid fa-angle-down"></i></button>
                 <div class="panel">
                     <ul>
                         <li><a href="#">Top Semanal</a></li>
@@ -162,8 +163,9 @@
                         <li><a href="#">Mejor valorados</a></li>
                     </ul>
                 </div>
-            
-                <button class="accordion"><i class="fa-solid fa-newspaper"></i> manga <i class="fa-solid fa-angle-down"></i></button>
+
+                <button class="accordion"><i class="fa-solid fa-newspaper"></i> manga <i
+                        class="fa-solid fa-angle-down"></i></button>
                 <div class="panel">
                     <ul>
                         <li><a href="#">Top Manga</a></li>
@@ -171,10 +173,11 @@
                         <li><a href="#">Mejor valorados</a></li>
                     </ul>
                 </div>
-            
+
                 <button class="accordionGeneral"><i class="fa-solid fa-newspaper"></i> noticias</button>
-    
-                <button class="accordion"><i class="fa-sharp fa-solid fa-circle-info"></i> Ayuda <i class="fa-solid fa-angle-down"></i></button>
+
+                <button class="accordion"><i class="fa-sharp fa-solid fa-circle-info"></i> Ayuda <i
+                        class="fa-solid fa-angle-down"></i></button>
                 <div class="panel">
                     <ul>
                         <li><a href="#">Acerca de</a></li>
@@ -271,6 +274,23 @@
                     </div>
                 </div>
             </div>
+
+            <!--Slider de la pagina para moviles-->
+            <button class="slide-visible slide-prev"><i class="fa-solid fa-angle-left"></i></button>
+            <div class="slide-visible">
+                <div data-slide="slide" class="slide">
+                    <div class="slide-visible titulo">
+                        <p>Top 5 de la semana</p>
+                    </div>
+                    <div class="slide-items">
+                    </div>
+
+                    <nav class="slide-nav">
+                        <div class="slide-thumb"></div>
+                    </nav>
+                </div>
+            </div> <!--Fin del slider-->
+            <button class="slide-visible slide-next"><i class="fa-solid fa-angle-right"></i></button>
 
         </div> <!--Fin del carrusel principal de la pagina-->
 
@@ -691,7 +711,7 @@
     </footer><!--fin del footer-->
 
 
-    <!-- agregar los aquí-->
+    <!-- agregar los js aquí-->
     <script src="../js/buscador.js"></script>
     <script src="../js/carrito.js"></script>
     <script src="../js/btnDark.js"></script>
@@ -700,6 +720,7 @@
     <script src="../js/carouselBanner.js"></script>
     <script src="../js/login-signUp.js"></script>
     <script src="../js/menuResponsive.js"></script>
+    <script src="../js/slideMobile.js"></script>
 </body>
 
 </html>
